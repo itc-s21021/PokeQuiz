@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Pokemon</string>
+    <string name="quiz">ポケモンクイズ</string>
+    <string name="sedai">世代選択</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="world">全国図鑑</string>
+    <string name="kanto">カントー図鑑(赤・緑・青・ピカチュウ)</string>
+    <string name="zyouto">ジョウト図鑑(金・銀・クリスタル)</string>
+    <string name="houen">ホウエン図鑑(ルビー・サファイア・エメラルド)</string>
+    <string name="sinou">シンオウ図鑑(ダイアモンド・パール・プラチナ)</string>
+    <string name="issyu">イッシュ図鑑(ブラック2・ホワイト2)</string>
+    <string name="sentoraru">セントラルカロス図鑑(X・Y)</string>
+    <string name="kosuto">コーストカロス図鑑(X・Y)</string>
+    <string name="maunten">マウンテンカロス図鑑(X・Y)</string>
+    <string name="arora">マウンテンカロス図鑑(X・Y)</string>
+    <string name="gararu">ガラル図鑑(ソード・シールド)</string>
+    <string name="yoroi">ヨロイ島図鑑(ソード・シールド)</string>
+    <string name="kanmuri">カンムリ雪原図鑑(ソード・シールド)</string>
+    <string name="hisui">ヒスイ図鑑(Pokémon LEGENDS アルセウス)</string>
+    <string name="returnbutton">世代選択に戻る</string>
+    <string name="empty">%1$s</string>
+    <string name="empty1">%1$s</string>
+    <string name="empty2">%1$s</string>
+    <string name="empty3">%1$s</string>
+</resources>

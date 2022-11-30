@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="jp.ac.it_college_std.s21021.pokemon.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_generationFragment2"
+            app:destination="@id/generationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/generationFragment"
+        android:name="jp.ac.it_college_std.s21021.pokemon.GenerationFragment"
+        android:label="fragment_generation"
+        tools:layout="@layout/fragment_generation" >
+        <action
+            android:id="@+id/action_generationFragment_to_questionFragment"
+            app:destination="@id/questionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questionFragment"
+        android:name="jp.ac.it_college_std.s21021.pokemon.QuestionFragment"
+        android:label="fragment_question"
+        tools:layout="@layout/fragment_question" >
+        <action
+            android:id="@+id/action_questionFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+        <argument
+            android:name="pokemonid"
+            app:argType="integer[]" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="jp.ac.it_college_std.s21021.pokemon.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" >
+        <action
+            android:id="@+id/action_resultFragment_to_generationFragment2"
+            app:destination="@id/generationFragment" />
+    </fragment>
+</navigation>
