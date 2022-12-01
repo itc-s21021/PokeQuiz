@@ -92,6 +92,7 @@ class GenerationFragment : Fragment() {
                 GenerationFragmentDirections.actionGenerationFragmentToQuestionFragment(list, args.hardmode)
             )
         }
+
         binding.kanmuri.setOnClickListener {
             val list = element.pokedex[12].entries.map { e -> e.pokemon_id }.toIntArray()
             Navigation.findNavController(it).navigate(
