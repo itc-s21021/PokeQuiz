@@ -3,7 +3,7 @@ Androidの課題
 ホーム画面で難易度を選択します<br>
 ※簡単を選択すると1問10秒のシルエットの4択問題になります<br>
 ※難しいを選択すると1問40秒のポケモンの名前を記述する問題になります<br>
-![Screenshot from 2022-12-01 23-30-44](https://user-images.githubusercontent.com/83270158/205084502-465f4164-134a-400b-8d09-f2e11b130eb6.png)]
+![Screenshot from 2022-12-01 23-30-44](https://user-images.githubusercontent.com/83270158/205084502-465f4164-134a-400b-8d09-f2e11b130eb6.png)]<br>
 世代を選択します<br>
 選んだ世代のポケモンがシルエットで出るので制限時間内にときます<br>
 制限時間をすぎると不正解扱いになります<br>
