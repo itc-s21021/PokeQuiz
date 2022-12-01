@@ -22,18 +22,35 @@
         <action
             android:id="@+id/action_generationFragment_to_questionFragment"
             app:destination="@id/questionFragment" />
+        <argument
+            android:name="hardmode"
+            app:argType="boolean" />
     </fragment>
     <fragment
         android:id="@+id/questionFragment"
         android:name="jp.ac.it_college_std.s21021.pokemon.QuestionFragment"
         android:label="fragment_question"
         tools:layout="@layout/fragment_question" >
-        <action
-            android:id="@+id/action_questionFragment_to_resultFragment"
-            app:destination="@id/resultFragment" />
         <argument
             android:name="pokemonid"
             app:argType="integer[]" />
+        <argument
+            android:name="qCount"
+            app:argType="integer"
+            android:defaultValue="1" />
+        <action
+            android:id="@+id/quizToQuiz"
+            app:destination="@id/questionFragment" />
+        <action
+            android:id="@+id/quizToResult"
+            app:destination="@id/resultFragment" />
+        <argument
+            android:name="score"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="hardmode"
+            app:argType="boolean" />
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
@@ -41,7 +58,13 @@
         android:label="fragment_result"
         tools:layout="@layout/fragment_result" >
         <action
-            android:id="@+id/action_resultFragment_to_generationFragment2"
-            app:destination="@id/generationFragment" />
+            android:id="@+id/resultToTitle"
+            app:destination="@id/homeFragment" />
+        <argument
+            android:name="score"
+            app:argType="integer" />
+        <argument
+            android:name="hardmode"
+            app:argType="boolean" />
     </fragment>
 </navigation>

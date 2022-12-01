@@ -17,9 +17,15 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
-        binding.sedai.setOnClickListener {
+        binding.btEasy.setOnClickListener {
             Navigation.findNavController(it).navigate(
-                HomeFragmentDirections.actionHomeFragmentToGenerationFragment2()
+                HomeFragmentDirections.actionHomeFragmentToGenerationFragment2(false)
+//                R.id.generationFragment
+            )
+        }
+        binding.btHard.setOnClickListener {
+            Navigation.findNavController(it).navigate(
+                HomeFragmentDirections.actionHomeFragmentToGenerationFragment2(true)
 //                R.id.generationFragment
             )
         }

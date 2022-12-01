@@ -23,4 +23,12 @@
     <string name="empty1">%1$s</string>
     <string name="empty2">%1$s</string>
     <string name="empty3">%1$s</string>
+    <string name="q_count">%d問目</string>
+    <string name="score">%d/10</string>
+    <string name="timer">%d</string>
+    <string name="input_answer">ポケモンの名前を入力</string>
+    <string name="answer">回答</string>
+    <string name="easy">簡単</string>
+    <string name="hard">難しい</string>
+    <string name="toast_miss">不正解✖正解は%s</string>
 </resources>

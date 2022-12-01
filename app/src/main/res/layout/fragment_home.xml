@@ -21,14 +21,37 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/sedai"
+        android:id="@+id/btEasy"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:layout_marginTop="50dp"
-        android:text="@string/sedai"
+        android:backgroundTint="#94D13F"
+        android:text="@string/easy"
         android:textSize="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/quiz" />
+
+    <Button
+        android:id="@+id/btHard"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#9C27B0"
+        android:text="@string/hard"
+        android:textSize="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/quiz" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="205dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,18 +12,35 @@
         android:id="@+id/returnbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="220dp"
         android:text="@string/returnbutton"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="469dp" />
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView2"
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="80sp"
+        app:layout_constraintBottom_toTopOf="@+id/returnbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="10/10" />
+
+    <TextView
+        android:id="@+id/tvmode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/returnbutton"
+        android:textColor="#E91E63"
+        app:layout_constraintBottom_toTopOf="@+id/tvScore"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@tools:sample/avatars" />
+        tools:text="簡単"
+        tools:textSize="50sp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
