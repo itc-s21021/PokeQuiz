@@ -31,4 +31,5 @@
     <string name="easy">簡単</string>
     <string name="hard">難しい</string>
     <string name="toast_miss">不正解✖正解は%s</string>
+    <string name="quiz2">クイズ</string>
 </resources>
